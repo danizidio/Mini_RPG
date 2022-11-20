@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_EDark
+  m_Shader: {fileID: -6465566751694194690, guid: b662866008c6e2a4aab2354b51489df1, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Emission:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BUILTIN_QueueControl: 0
+    - _BUILTIN_QueueOffset: 0
+    - _DissolveFX: 1
+    - _EletrifyAmount: 2
+    - _Fade: 1
+    - _GhostFX: 0
+    - _LightningFX: 0
+    - _LightningScale: 20
+    - _LightningThickness: 0
+    - _OutlineFX: 1
+    - _Outline_Thickness_D: 0.1
+    - _Outline_Thickness_L: 0.1
+    - _Outline_Thickness_R: 0.1
+    - _Outline_Thickness_U: 0.1
+    - _Scale: 13.9
+    m_Colors:
+    - _CharColor: {r: 0.00026699965, g: 0.00026699965, b: 0.05660379, a: 1}
+    - _Color: {r: 0, g: 0.8472306, b: 14.711052, a: 0}
+    - _Color_1: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _LightningColor: {r: 0, g: 0, b: 0, a: 0}
+    - _LightningNoiseSpeed: {r: 0, g: -0.5, b: 0, a: 0}
+    - _LightningSpeed: {r: 0, g: 0.5, b: 0, a: 0}
+    - _OutlineColor: {r: 55.309044, g: 55.309044, b: 55.309044, a: 1}
+    - _SimpleColor: {r: 0.08738003, g: 0.0747597, b: 0.1509434, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &2440664088224414123
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0

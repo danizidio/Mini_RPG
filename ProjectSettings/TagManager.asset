@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - FilmGrainFX
+  - Global Volume
+  - ChromaFX
+  - VolumeSFX
+  - VolumeSound
+  - BloomFX
+  - NavigationData
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BACKGROUND
+    uniqueID: 1793405653
+    locked: 0
+  - name: SCENARIO
+    uniqueID: 2482961099
+    locked: 0
+  - name: NPCS
+    uniqueID: 1113384955
+    locked: 0
+  - name: INTERMEDIARY_SCENARIO
+    uniqueID: 2776831957
+    locked: 0
+  - name: PLAYER
+    uniqueID: 2484553243
+    locked: 0
+  - name: ENEMIES
+    uniqueID: 364703969
+    locked: 0
+  - name: FOREGROUND
+    uniqueID: 3809813403
+    locked: 0
+  - name: UI
+    uniqueID: 784395565
+    locked: 0
