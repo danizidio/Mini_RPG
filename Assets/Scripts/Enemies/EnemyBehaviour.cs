@@ -88,9 +88,9 @@ public class EnemyBehaviour : MonoBehaviour
 
         if(value2 <= _chanceToGiveItem)
         {
-            GameBehaviour.instance.PlayerMoney += Random.Range(1, _enemyAttributes.MaxMoney);
+            //GameBehaviour.instance.PlayerMoney += Random.Range(1, _enemyAttributes.MaxMoney);
 
-            GameBehaviour.instance.OnTakingCoins?.Invoke();
+            GameBehaviour.instance.OnTakingCoins?.Invoke(Random.Range(1, _enemyAttributes.MaxMoney));
         }
     }
 

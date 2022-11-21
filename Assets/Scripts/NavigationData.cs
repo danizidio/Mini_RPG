@@ -111,7 +111,7 @@ public class NavigationData : MonoBehaviour
 
                 gb.PlayerMoney = tempCoin;
 
-                gb.OnTakingCoins?.Invoke();
+                gb.UpdateUICoins();
                     
             }
             catch
@@ -331,11 +331,17 @@ public class NavigationData : MonoBehaviour
 
     public int TakingMiscItems()
     {
-        return _miscItems++;
+        SaveLoad sv = new();
+        sv.PlayerSaveInt(SaveStrings.MISC_ITEMS.ToString(), _miscItems++);
+
+        return _miscItems;
     }
 
     public int CleanMiscItems()
     {
+        SaveLoad sv = new();
+        sv.PlayerSaveInt(SaveStrings.MISC_ITEMS.ToString(), 0);
+
         return _miscItems = 0;
     }
 

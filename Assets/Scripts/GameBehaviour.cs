@@ -1,12 +1,13 @@
 using UnityEngine;
 using StateMachine;
 using System;
+using SaveLoadPlayerPrefs;
 
 public class GameBehaviour : GamePlayBehaviour
 {
     public static GameBehaviour instance;
 
-    public delegate void _onTakingCoins();
+    public delegate void _onTakingCoins(int value);
     public _onTakingCoins OnTakingCoins;
 
     PlayerBehaviour _player;
@@ -97,12 +98,26 @@ public class GameBehaviour : GamePlayBehaviour
         }
     }
 
-    public void UpdateCoins()
+    public void UpdateCoins(int value)
+    {
+        _playerMoney += value;
+
+        if (_playerMoney <= 0)
+        {
+            _playerMoney = 0;
+        }
+
+        SaveLoad sv = new();
+        sv.SavingCoins(PlayerMoney);
+
+        UpdateUICoins();
+    }
+
+    public void UpdateUICoins()
     {
         GameObject temp = GameObject.FindGameObjectWithTag("Currency Show");
         temp.GetComponent<TMPro.TMP_Text>().text = PlayerMoney.ToString();
     }
-
     private void OnEnable()
     {
         OnNextGameState += NextGameStates;

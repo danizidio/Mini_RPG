@@ -20,11 +20,7 @@ public class ShopButtons : MonoBehaviour
 
             GameObject p = GameObject.FindGameObjectWithTag("Player");
 
-            GameBehaviour.instance.PlayerMoney -= a;
-
-            s.SavingCoins(GameBehaviour.instance.PlayerMoney);
-
-            GameBehaviour.instance.OnTakingCoins();
+            GameBehaviour.instance.OnTakingCoins(-a);
 
             if(_type == EquipmentType.ARMOR)
             {
@@ -59,9 +55,7 @@ public class ShopButtons : MonoBehaviour
 
         GameBehaviour.instance.PlayerMoney += a;
 
-        s.SavingCoins(GameBehaviour.instance.PlayerMoney);
-
-        GameBehaviour.instance.OnTakingCoins();
+        GameBehaviour.instance.OnTakingCoins(a);
 
         ShowInfoUI(true, "TAKE THIS " + a + " COINS, FOR YOUR " + NavigationData.instance.MiscItems + " SOLD ITEMS");
     }
