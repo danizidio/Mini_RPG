@@ -22,7 +22,7 @@ namespace ShowText
         private void Start()
         {
             _canvas = GetComponentInChildren<Canvas>();
-            _canvas.worldCamera = FindObjectOfType<Camera>();
+            _canvas.worldCamera = FindAnyObjectByType<Camera>();
 
             _txtObj = GetComponentInChildren<TMP_Text>();
         }

@@ -1,10 +1,9 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
+using Unity.Cinemachine;
 
 [RequireComponent(typeof(CinemachineBrain))]
-[RequireComponent(typeof(CinemachineVirtualCamera))]
+[RequireComponent(typeof(CinemachineCamera))]
 public class CameraBehaviour : MonoBehaviour
 {
     public delegate void _onSearchingPlayer();
@@ -25,7 +24,7 @@ public class CameraBehaviour : MonoBehaviour
 
         if (p != null)
         {
-            GetComponent<CinemachineVirtualCamera>().Follow = p.transform;
+            GetComponent<CinemachineCamera>().Follow = p.transform;
 
             GameBehaviour.OnNextGameState?.Invoke(GamePlayStates.START);
 
